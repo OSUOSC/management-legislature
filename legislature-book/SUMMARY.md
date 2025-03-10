@@ -1,3 +1,10 @@
 # Summary
 
-- [Chapter 1](./chapter_1.md)
+[Introduction](introduction.md)
+
+[Constitution](constitution.md)
+
+# E-Board Procedure Recommendations
+
+- [President](./president.md)
+- [Vice President](./vice_president.md)
