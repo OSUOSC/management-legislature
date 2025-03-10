@@ -1,6 +1,6 @@
 [book]
-authors = ["MMachado05"]
+authors = ["Marcial Machado"]
 language = "en"
 multilingual = false
-src = "src"
+src = "legislature-book"
 title = "Open Source Club at the Ohio State University"
