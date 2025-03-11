@@ -2,12 +2,11 @@
 
 [Introduction](README.md)
 
----
+[Past Executive Officers](pastexec.md)
 
 # The Constitution
 
-[Preamble]()
-
+- [Preamble](constitution/preamble.md)
 - [Article I: Definition]()
     - [Section I: Name]()
     - [Section II: Purpose]()
@@ -30,10 +29,11 @@
 - [Article VIII: Methods of Amending this Constitution]()
 - [Article IX: Methods of Dissolving this Organization]()
 
+---
 
 # Executive Officer Procedures
 
-[x]() <!-- No idea why I have to do this... -->
+[x]()
 
 [General Procedure Recommendations for the Executive Board]()
 
