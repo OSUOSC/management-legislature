@@ -1,3 +1,5 @@
+# This repository is in heavy development, and does not represent the active constitution for the Open Source Club at Ohio State University.
+
 # Legislature and Procedures for the Ohio State University
 
 This Git repository serves as the central hub for all legislature regarding OSC@tOSU.
