@@ -1,0 +1,230 @@
+\documentclass[12pt,letterpaper]{article}
+
+% Packages
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{hanging}
+\usepackage{setspace}
+\usepackage{bookmark}
+
+% Color for headings and accents
+\definecolor{darkblue}{RGB}{137,0,0}
+
+% Custom heading formats
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{darkblue}}
+  {ARTICLE \thesection.}{0.5em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}
+  {Section \thesubsection.}{0.5em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}
+  {\thesubsubsection.}{0.5em}{}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead[R]{\slshape Constitution}
+\fancyfoot[C]{\thepage}
+
+% Document content starts here
+\begin{document}
+
+% Title page
+\begin{titlepage}
+\begin{center}
+\vspace*{1cm}
+
+% Logo
+\includegraphics[width=0.4\textwidth]{logo.png}\\[2cm]
+
+% Title
+{\LARGE\bfseries\color{darkblue} CONSTITUTION\\[0.5cm]}
+{\huge\bfseries\color{darkblue} \underline{[ORGANIZATION NAME]}\\[1cm]}
+
+% Subtitle
+{\large Last Revised: [Month Day, Year]}\\[3cm]
+
+% Bottom of title page
+\vfill
+{\large [University Name]}\\
+{\large [City, State]}\\[1cm]
+\end{center}
+\end{titlepage}
+
+% Table of contents
+\tableofcontents
+\clearpage
+
+% Document proper starts here
+\section*{PREAMBLE}
+\addcontentsline{toc}{section}{PREAMBLE}
+
+\begin{hangparas}{0.5in}{1}
+We, the members of [ORGANIZATION NAME] at [University Name], in order to establish an effective organization, promote [state purpose, e.g., "academic excellence, professional development, and community service in the field of..."], and create a supportive community for students interested in [field/interest area], do hereby adopt and establish this Constitution as the governing document of our organization.
+\end{hangparas}
+
+\section{NAME AND PURPOSE}
+
+\subsection{Name}
+The name of this organization shall be [ORGANIZATION NAME], hereafter referred to as the "Organization."
+
+\subsection{Purpose}
+The purpose of this Organization shall be to:
+\begin{enumerate}[label=\alph*., leftmargin=2em]
+    \item (Describe first purpose)
+    \item (Describe second purpose)
+    \item (Describe third purpose)
+    \item (Add more purposes as needed)
+\end{enumerate}
+
+\section{MEMBERSHIP}
+
+\subsection{Eligibility}
+Membership in this Organization shall be open to all enrolled students at [University Name] who:
+\begin{enumerate}[label=\alph*., leftmargin=2em]
+    \item Are in good academic standing with the university.
+    \item (Any other eligibility requirements)
+\end{enumerate}
+
+\subsection{Non-Discrimination Clause}
+This Organization and its members shall not discriminate against any individual(s) for reasons of age, color, disability, gender identity or expression, national origin, race, religion, sex, sexual orientation, or veteran status.
+
+\subsection{Membership Categories}
+\begin{enumerate}[label=\alph*., leftmargin=2em]
+    \item \textbf{Active Members:} [Define active membership requirements]
+    \item \textbf{Associate Members:} [If applicable, define associate membership]
+    \item \textbf{Honorary Members:} [If applicable, define honorary membership]
+\end{enumerate}
+
+\subsection{Dues}
+\begin{enumerate}[label=\alph*., leftmargin=2em]
+    \item Membership dues shall be \$[amount] per [semester/year].
+    \item The Executive Board may review and adjust dues annually.
+    \item (Any policies regarding dues payment, deadlines, etc.)
+\end{enumerate}
+
+\section{OFFICERS}
+
+\subsection{Officer Positions}
+The Organization shall have the following officers:
+\begin{enumerate}[label=\alph*., leftmargin=2em]
+    \item President
+    \item Vice President
+    \item Secretary
+    \item Treasurer
+    \item (Other officer positions as needed)
+\end{enumerate}
+
+\subsection{Duties of Officers}
+\begin{enumerate}[label=\alph*., leftmargin=2em]
+    \item \textbf{President:} [List duties]
+    \item \textbf{Vice President:} [List duties]
+    \item \textbf{Secretary:} [List duties]
+    \item \textbf{Treasurer:} [List duties]
+    \item (Duties for other officers)
+\end{enumerate}
+
+\subsection{Term of Office}
+\begin{enumerate}[label=\alph*., leftmargin=2em]
+    \item Officers shall serve for one academic year, from [start date] to [end date].
+    \item (Any term limits or restrictions)
+\end{enumerate}
+
+\section{ELECTIONS}
+
+\subsection{Election Timing}
+Elections shall be held [when and how often].
+
+\subsection{Eligibility}
+\begin{enumerate}[label=\alph*., leftmargin=2em]
+    \item Candidates must be active members in good standing.
+    \item (Any other eligibility requirements)
+\end{enumerate}
+
+\subsection{Nomination Process}
+(Describe the nomination process)
+
+\subsection{Voting Procedures}
+\begin{enumerate}[label=\alph*., leftmargin=2em]
+    \item (Describe voting method)
+    \item (Describe quorum requirements)
+    \item (Describe how winners are determined)
+\end{enumerate}
+
+\section{MEETINGS}
+
+\subsection{Regular Meetings}
+\begin{enumerate}[label=\alph*., leftmargin=2em]
+    \item Regular meetings shall be held [frequency and time].
+    \item (Any other details about regular meetings)
+\end{enumerate}
+
+\subsection{Special Meetings}
+(Describe procedures for calling and conducting special meetings)
+
+\subsection{Quorum}
+A quorum for conducting business shall consist of [define quorum, e.g., "two-thirds of the active membership" or "50\% plus one of the active membership"].
+
+\section{FINANCES}
+
+\subsection{Fiscal Year}
+The fiscal year of the Organization shall be from [start date] to [end date].
+
+\subsection{Budget}
+\begin{enumerate}[label=\alph*., leftmargin=2em]
+    \item (Describe budget creation process)
+    \item (Describe budget approval process)
+\end{enumerate}
+
+\subsection{Financial Records}
+The Treasurer shall maintain accurate financial records and provide regular reports to the membership.
+
+\section{AMENDMENTS}
+
+\subsection{Proposal Process}
+Amendments to this Constitution may be proposed by [who can propose amendments and how].
+
+\subsection{Ratification}
+Amendments shall be ratified by a [voting threshold, e.g., "two-thirds"] vote of the active membership, provided that the proposed amendment has been submitted to the membership in writing at least [time period] before the vote.
+
+\section{DISSOLUTION}
+
+\subsection{Procedure}
+This Organization may be dissolved by a [voting threshold, e.g., "three-fourths"] vote of the active membership.
+
+\subsection{Asset Distribution}
+Upon dissolution, all assets shall be distributed according to [university policy or specific plan].
+
+\section{BYLAWS}
+
+\subsection{Establishment}
+The Organization may establish bylaws to govern its operations in accordance with this Constitution.
+
+\subsection{Amendment}
+Bylaws may be amended by a [voting threshold, e.g., "majority"] vote of the active membership.
+
+% Signature section
+\clearpage
+\section*{RATIFICATION}
+\addcontentsline{toc}{section}{RATIFICATION}
+
+We, the undersigned, hereby ratify this Constitution on behalf of [ORGANIZATION NAME].
+
+\vspace{1cm}
+\begin{tabular}{p{3in}p{3in}}
+\rule{3in}{0.5pt} & \rule{3in}{0.5pt} \\
+President & Faculty Advisor \\
+& \\
+\rule{3in}{0.5pt} & \rule{3in}{0.5pt} \\
+Vice President & Date of Ratification \\
+\end{tabular}
+
+\end{document}
