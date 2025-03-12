@@ -16,7 +16,9 @@ will open. No less than one week before this period, current Executive leadershi
 have notified active members at large of the upcoming self-nomination period. Current
 Executive leadership is to prepare a manner in which members can self-nominate for all
 Executive roles and potential new ones, should they feel that there is a set of responsibilities
-warranting their own dedicated role, and that they are qualified to fulfill them. Whatever
+warranting their own dedicated role, and that they are qualified to fulfill them. The
+creation of this new role is left to current Officer discretion as established in
+[Section III](/constitution/article4/section3.html) of this article. Whatever
 manner of self-nomination is selected must also include a way for self-nominees to justify
 their candidacy for the role (be it past experience, relevant skills, etc.) so that voters
 are better prepared to gauge the available candidates. An active member is permitted to
