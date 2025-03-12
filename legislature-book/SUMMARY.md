@@ -17,7 +17,7 @@
 - [Article III](constitution/article3/README.md)
     - [Section I](constitution/article3/section1.md)
     - [Section II](constitution/article3/section2.md)
-- [Article IV](constitition/article4/README.md)
+- [Article IV](constitution/article4/README.md)
     - [Section I](constitution/article4/section1.md)
     - [Section II](constitution/article4/section2.md)
     - [Section III](constitution/article4/section3.md)
