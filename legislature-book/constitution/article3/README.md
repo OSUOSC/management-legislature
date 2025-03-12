@@ -12,3 +12,6 @@ organization member is defined.
 
 In calculating a non-unanimities (i.e. majorities or pluralities), abstentions from active
 members are ignored. In calculating a unanimity, abstentions are equivalent to nays.
+
+Members removed from the organization through the procedures forthcoming lose their status
+of good standing for two academic years.
