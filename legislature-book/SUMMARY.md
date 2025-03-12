@@ -21,13 +21,13 @@
     - [Section I](constitution/article4/section1.md)
     - [Section II](constitution/article4/section2.md)
     - [Section III](constitution/article4/section3.md)
-- [Article V](constitition/article5/README.md)
-- [Article VI](constitition/article6/README.md)
-- [Article VII](constitition/article7/README.md)
+- [Article V](constitution/article5/README.md)
+- [Article VI](constitution/article6/README.md)
+- [Article VII](constitution/article7/README.md)
     - [Section I](constitution/article7/section1.md)
     - [Section II](constitution/article7/section2.md)
-- [Article VIII](constitition/article8/README.md)
-- [Article IX](constitition/article9/README.md)
+- [Article VIII](constitution/article8/README.md)
+- [Article IX](constitution/article9/README.md)
 
 ---
 
