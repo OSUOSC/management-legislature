@@ -35,16 +35,16 @@
 
 [x]()
 
-[General Procedure Recommendations for the Executive Board](/briefs/README.md)
+[General Procedure Recommendations for the Executive Board](briefs/README.md)
 
-[President](/briefs/president.md)
+[President](briefs/president.md)
 
-[Vice President](/briefs/vice-president.md)
+[Vice President](briefs/vice-president.md)
 
-[Treasurer](/briefs/treasurer.md)
+[Treasurer](briefs/treasurer.md)
 
-[Development Czar](/briefs/development.md)
+[Development Czar](briefs/development.md)
 
-[Website Czar](/briefs/website.md)
+[Website Czar](briefs/website.md)
 
-[Social Media Czar](/briefs/social-media.md)
+[Social Media Czar](briefs/social-media.md)
