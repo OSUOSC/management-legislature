@@ -8,23 +8,30 @@
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
+\usepackage{pifont}
 \usepackage{hanging}
+\usepackage{xfrac}
 \usepackage{setspace}
+\usepackage{hyperref}
 \usepackage{bookmark}
 
 % Color for headings and accents
-\definecolor{darkblue}{RGB}{137,0,0}
+\definecolor{crimsonred}{RGB}{117,0,0}
 
 % Custom heading formats
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\Roman{subsection}}
+\renewcommand{\thesubsubsection}{\Roman{subsubsection}}
 \titleformat{\section}
-  {\normalfont\Large\bfseries\color{darkblue}}
+  {\normalfont\Large\bfseries\color{crimsonred}}
   {ARTICLE \thesection.}{0.5em}{}
 \titleformat{\subsection}
   {\normalfont\large\bfseries}
-  {Section \thesubsection.}{0.5em}{}
+  {SECTION \thesubsection.}{0.5em}{}
 \titleformat{\subsubsection}
   {\normalfont\normalsize\bfseries}
-  {\thesubsubsection.}{0.5em}{}
+  {CHAPTER \thesubsubsection.}{0.5em}{}
+\setlist{noitemsep}
 
 % Header and footer
 \pagestyle{fancy}
@@ -37,6 +44,13 @@
 % Document content starts here
 \begin{document}
 
+% Change bullet style
+\renewcommand{\labelitemi}{\textcolor{crimsonred}{\ding{68}}}
+\renewcommand{\labelitemii}{\textcolor{crimsonred}{\ding{67}}}
+\renewcommand{\labelitemiii}{\textcolor{crimsonred}{\ding{66}}}
+% \renewcommand{\labelitemii}{\textcolor{crimsonred}{$\blacktriangleright$}}
+% \renewcommand{\labelitemiii}{\textcolor{crimsonred}{$\bullet$}}
+
 % Title page
 \begin{titlepage}
 \begin{center}
@@ -46,16 +60,16 @@
 \includegraphics[width=0.4\textwidth]{logo.png}\\[2cm]
 
 % Title
-{\LARGE\bfseries\color{darkblue} CONSTITUTION\\[0.5cm]}
-{\huge\bfseries\color{darkblue} \underline{[ORGANIZATION NAME]}\\[1cm]}
+{\LARGE\bfseries\color{crimsonred} CONSTITUTION\\[0.5cm]}
+{\huge\bfseries\color{crimsonred} \underline{Open Source Club}\\[1cm]}
 
 % Subtitle
 {\large Last Revised: [Month Day, Year]}\\[3cm]
 
 % Bottom of title page
 \vfill
-{\large [University Name]}\\
-{\large [City, State]}\\[1cm]
+{\large Ohio State University}\\
+{\large Columbus, OH}\\[1cm]
 \end{center}
 \end{titlepage}
 
@@ -68,155 +82,258 @@
 \addcontentsline{toc}{section}{PREAMBLE}
 
 \begin{hangparas}{0.5in}{1}
-We, the members of [ORGANIZATION NAME] at [University Name], in order to establish an effective organization, promote [state purpose, e.g., "academic excellence, professional development, and community service in the field of..."], and create a supportive community for students interested in [field/interest area], do hereby adopt and establish this Constitution as the governing document of our organization.
+  The Open Source Club at the Ohio State University has had an extensive role in OSU's
+  tech-related student life, from sprouting into other clubs and events, to encouraging
+  students and alumni alike to become a part of the open source community.
+
+  The current leadership of this organization would like to extend gratitude to former
+  members and staff; open source has had a rich history, both in and out of OSU's campus,
+  and it is with the support of those who have come before us that we are able to exercise
+  this passion so freely.
+
+  A detailed record of past leadership for the Open Source Club at the Ohio State University
+  is included in the complete legislature for the organization, which can be found at
+  \href{https://legislature.osuosc.org}{legislature.osuosc.org}.
+
+  Additionally, the following are the available direct links to the different ways in which
+  this constitution can be read:
+
+  \begin{itemize}
+    \item \href{https://legislature.osuosc.org/constitution/preamble.html}{mdBook} (through
+      your browser)
+    \item \href{https://activities.osu.edu/involvement/student_organizations/find_a_student_org?i=1042}{PDF} (in the link provided to the right of "\textbf{Constitution}")
+  \end{itemize}
+
+  \textbf{This constitution is licensed as \href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{CreativeCommmons Attribution ShareAlike}. You are free to use it to create your own
+  constitutions, both in format and in file, so long as you provide credit to the Open Source
+Club at the Ohio State University for creating the original template and content, and allow
+other individuals to do the same with whatever derivative constitution you create.}
 \end{hangparas}
 
-\section{NAME AND PURPOSE}
+\section{Definition}
+
+Article I of the Constitution for the Open Source Club at the Ohio State University specifies
+the definition of the club, or, how the club ought to be referred to as, and the nature of the
+club and its establishment.
 
 \subsection{Name}
-The name of this organization shall be [ORGANIZATION NAME], hereafter referred to as the "Organization."
+
+The name of this student organization is to be ``The Open Source Club at the Ohio State
+University.'' ("The Open Source Club", "Open Source  Club", "OSC", "th(e/is) organization",
+"th(e/is) student organization").
+
+The following are appropriate shorthands that may be used throughout organization legislature
+or in general reference to the organization:
+
+\begin{itemize}
+  \item The Open Source Club at OSU
+  \item Open Source Club at OSU
+  \item OSC at OSU
+  \item OSC@tOSU
+\end{itemize}
+
+If the name is being provided in documentation or communications strictly within the
+Ohio State University, suffixed terms "OSU" and "the Ohio State University" may be omitted
+for brevity.
 
 \subsection{Purpose}
-The purpose of this Organization shall be to:
-\begin{enumerate}[label=\alph*., leftmargin=2em]
-    \item (Describe first purpose)
-    \item (Describe second purpose)
-    \item (Describe third purpose)
-    \item (Add more purposes as needed)
+
+This student organization will dedicate itself to helping promote, propogate, and standardize
+the open source paradigm of technology deevelopment and use, both in software, and in other
+works to which the open source paradigm is applicable and societally beneficial.
+
+The organization will strive to excel in these three vectors by:
+
+\begin{enumerate}[label=\textcolor{crimsonred}{\alph*.}, leftmargin=2em]
+  \item Introducing the open source model of development to OSU students and the larger
+    OSU/Columbus community;
+  \item Showcasing projects developed under an open source development model (programs,
+    games, websites, arts, etc.);
+  \item Fostering interest in the open source community, and providing ways for members
+    to involve themselves in it (meetings, talks, workshops, etc.);
+  \item Creating a space in which members can engage in constructive discourse on the
+    topics surrounding open source;
+  \item Raising awareness of the value the open source paradigm can provide to students,
+    members of our communities, and society at large;
+  \item Inspire members to think critically about the technology they use, the way that
+    technology interfaces and affects their lives, and the ways in which we can reclaim
+    our agency and foster solidarity in our communities through a more sustainable
+    relationship with technology and a more democratic paradigm of technology in our societies.
 \end{enumerate}
 
-\section{MEMBERSHIP}
+\subsection{Non-Descrimination Policy}
 
-\subsection{Eligibility}
-Membership in this Organization shall be open to all enrolled students at [University Name] who:
-\begin{enumerate}[label=\alph*., leftmargin=2em]
-    \item Are in good academic standing with the university.
-    \item (Any other eligibility requirements)
-\end{enumerate}
+This organization does not discriminate on the basis of age, ancestry, color, disability,
+gender identity or expression, genetic information, HIV/AIDS status, military status,
+national origin, race, religion, sex, sexual orientation, protected veteran status, or
+any other bases under the law, in its activities, programs, admission, and employment.
 
-\subsection{Non-Discrimination Clause}
-This Organization and its members shall not discriminate against any individual(s) for reasons of age, color, disability, gender identity or expression, national origin, race, religion, sex, sexual orientation, or veteran status.
+In addition, this organization does not discriminate on the basis of academic standing,
+program affiliation, nor personal political affiliation.
 
-\subsection{Membership Categories}
-\begin{enumerate}[label=\alph*., leftmargin=2em]
-    \item \textbf{Active Members:} [Define active membership requirements]
-    \item \textbf{Associate Members:} [If applicable, define associate membership]
-    \item \textbf{Honorary Members:} [If applicable, define honorary membership]
-\end{enumerate}
+Finally, it is this organization's policy that these statements and policies extend to
+- and will be required of - all individuals who choose to associate with this
+organization; student, faculty, or otherwise.
 
-\subsection{Dues}
-\begin{enumerate}[label=\alph*., leftmargin=2em]
-    \item Membership dues shall be \$[amount] per [semester/year].
-    \item The Executive Board may review and adjust dues annually.
-    \item (Any policies regarding dues payment, deadlines, etc.)
-\end{enumerate}
+\section{Membership}
 
-\section{OFFICERS}
+In the pursuit of our stated purpose, membership in this student organization is extended
+to all members of the OSU and Columbus community who wish to involve themselves - and
+learn how to benefit from - open source. No fees or dues will ever be collected from any
+member of the community wishing to involve themselves in the Open Source Club.
 
-\subsection{Officer Positions}
-The Organization shall have the following officers:
-\begin{enumerate}[label=\alph*., leftmargin=2em]
-    \item President
-    \item Vice President
-    \item Secretary
-    \item Treasurer
-    \item (Other officer positions as needed)
-\end{enumerate}
+Recognizing the breadth of our potential member pool, we define the two types of
+members as \textbf{active} and \textbf{passive}, and elaborate on the priviledges afforded
+to each.
 
-\subsection{Duties of Officers}
-\begin{enumerate}[label=\alph*., leftmargin=2em]
-    \item \textbf{President:} [List duties]
-    \item \textbf{Vice President:} [List duties]
-    \item \textbf{Secretary:} [List duties]
-    \item \textbf{Treasurer:} [List duties]
-    \item (Duties for other officers)
-\end{enumerate}
+\subsection{Active Membership}
 
-\subsection{Term of Office}
-\begin{enumerate}[label=\alph*., leftmargin=2em]
-    \item Officers shall serve for one academic year, from [start date] to [end date].
-    \item (Any term limits or restrictions)
-\end{enumerate}
+Active membership is awarded to any and all currently-enrolled students of the Ohio State
+University, part- or full-time, who are in good standing with the organization, and who
+display activity within the organization to a recognizable degree. This includes, but is
+not limited to:
 
-\section{ELECTIONS}
+\begin{itemize}
+  \item Those who attend two or more in-person meetings in a semester
+  \item Those who are active in existing social groups (Discord, Revolt, Matrix, etc.)
+    \begin{itemize}
+      \item "Active" is loosely defined as contributing enough to online discussion so as
+        to easily be precisely identified and recalled by members during in-person
+        meetings, be it by username or reference to discussions of which the member in
+        question was a part. A more precise definition is left to current officership
+        discretion.
+    \end{itemize}
+  \item Other examples left to the officers' discretion.
+\end{itemize}
 
-\subsection{Election Timing}
-Elections shall be held [when and how often].
+Active membership affords members the privelege of continuing to participate in digital
+social groups; being allowed to attend meetings and, to the discretion of associated
+organizations, meeting collaborations.
 
-\subsection{Eligibility}
-\begin{enumerate}[label=\alph*., leftmargin=2em]
-    \item Candidates must be active members in good standing.
-    \item (Any other eligibility requirements)
-\end{enumerate}
+Active membership additionally affords members the privilege of being able to run for,
+and hold, executive officer positions; being able to vote for candidates for executive
+roles; being able to participate in votes for the removal of an executive officer.
 
-\subsection{Nomination Process}
-(Describe the nomination process)
+\subsection{Passive Membership}
 
-\subsection{Voting Procedures}
-\begin{enumerate}[label=\alph*., leftmargin=2em]
-    \item (Describe voting method)
-    \item (Describe quorum requirements)
-    \item (Describe how winners are determined)
-\end{enumerate}
+Passive membership is awarded to any and all individuals who are in good standing
+with the organization, and who display interest in the organization to a recognizable
+degree. This includes, but is not limited to:
 
-\section{MEETINGS}
+\begin{itemize}
+  \item Those who subscribe to any existing mailing lists.
+  \item Those who interact with any existing social media accounts.
+  \item Those who are members of any existing social groups (Discord, Revolt, Matrix, etc.)
+  \item Those who have expressed explicit interest in the club, but are unable to
+    consistently interface with it due to personal constraints.
+  \item Other examples left to the officers' discretion.
+\end{itemize}
 
-\subsection{Regular Meetings}
-\begin{enumerate}[label=\alph*., leftmargin=2em]
-    \item Regular meetings shall be held [frequency and time].
-    \item (Any other details about regular meetings)
-\end{enumerate}
+Passive membership affords members the privelege of continuing to participate in digital
+social groups; being allowed to attend meetings and, to the discretion of associated
+organizations, meeting collaborations.
 
-\subsection{Special Meetings}
-(Describe procedures for calling and conducting special meetings)
+\clearpage
 
-\subsection{Quorum}
-A quorum for conducting business shall consist of [define quorum, e.g., "two-thirds of the active membership" or "50\% plus one of the active membership"].
+\section{Procedures for Removing Members and Executive Officers}
 
-\section{FINANCES}
+It may be the case that a member of the organization, be they passive, active, or an
+executive officer, has their behavior deemed incongruent with the stated goals of the
+organization, in violation of the Ohio State University Standards, the Student Code of
+Conduct, and/or the Non-Discrimination Policy as expressed in Article I, Section III, or
+otherwise deemed unacceptable by the expectations of this organizations and its
+membership. For these regrettable cases, and in the interest of fostering a productive,
+accessible, and equitable community for the OSU community at large, a procedure for
+removing the offending organization member is defined.
 
-\subsection{Fiscal Year}
-The fiscal year of the Organization shall be from [start date] to [end date].
+In calculating a non-unanimities (i.e. majorities or pluralities), abstentions from
+active members are ignored. In calculating a unanimity, abstentions are equivalent to
+nays.
 
-\subsection{Budget}
-\begin{enumerate}[label=\alph*., leftmargin=2em]
-    \item (Describe budget creation process)
-    \item (Describe budget approval process)
-\end{enumerate}
+Members removed from the organization through the procedures forthcoming lose their
+status of good standing for two academic years.
 
-\subsection{Financial Records}
-The Treasurer shall maintain accurate financial records and provide regular reports to the membership.
+\subsection{The Removal of a Non-Officer}
 
-\section{AMENDMENTS}
+Non-officer members being considered for removal will be notified of this consideration,
+whereafter a one-week voting period open to active members, passive members, and officers
+will commence. The removal will be successful if:
 
-\subsection{Proposal Process}
-Amendments to this Constitution may be proposed by [who can propose amendments and how].
+\begin{itemize}
+  \item A unanimous decision to remove is made among the officers.
+  \item A simple majority decision to remove is made among passive and active members, separately.
+\end{itemize}
 
-\subsection{Ratification}
-Amendments shall be ratified by a [voting threshold, e.g., "two-thirds"] vote of the active membership, provided that the proposed amendment has been submitted to the membership in writing at least [time period] before the vote.
+\subsection{The Removal of an Officer}
 
-\section{DISSOLUTION}
+Officer members being considered for removal will be notified of this consideration,
+whereafter a two-week voting period open to active members will commence. The removal will
+be successful if:
 
-\subsection{Procedure}
-This Organization may be dissolved by a [voting threshold, e.g., "three-fourths"] vote of the active membership.
+\begin{itemize}
+  \item A \sfrac{2}{3} majority decision to remove is made among active members.
+\end{itemize}
 
-\subsection{Asset Distribution}
-Upon dissolution, all assets shall be distributed according to [university policy or specific plan].
+\section{Executive Officership}
 
-\section{BYLAWS}
+In the pursuit of effective organization management, a structure of executive officership
+is designed for active members of the organization to play a role in maintaining the
+community and longevity thereof.
 
-\subsection{Establishment}
-The Organization may establish bylaws to govern its operations in accordance with this Constitution.
+\clearpage
 
-\subsection{Amendment}
-Bylaws may be amended by a [voting threshold, e.g., "majority"] vote of the active membership.
+\subsection{Titles and Responsibilities}
+
+Any role not marked with an asterisk (*) is considered supplementary, and its being
+unfulfilled during an academic term is acceptable. In such an event, the available
+executive officership will take on the stated responsibilities at their discretion. As a
+default, any role not fulfilled will have their associated responsibilities taken on by
+the President and Vice President as appropriate.
+
+All Executive roles will have alternative titles that are to be recognized by past
+leadership and advisors as valid. They exist so as to allow flexibility in how members of
+the Executive Board of OSC represent their Officership to others, be that in professional
+documents, in communicating with non-OSC parties, or otherwise.
+
+\begin{itemize}
+  \item \textbf{*President:} The President is the primary leader of the executive board,
+    and oversees the large-scale success of the organization.
+    \begin{itemize}
+      \item The following is a non-exhaustive list of the expected responsibilities of
+        the President of Open Source Club:
+        \begin{itemize}
+          \item Deciding meeting times and topic;
+          \item Maintaining appropriate and welcoming behavior in OSC spaces (in-person,
+            digital, and otherwise);
+          \item Establishing and/or disestablishing social media accounts and virtual
+            social groups;
+          \item Representing OSC in matters with non-OSC parties;
+          \item Ensuring detailed records and recommendations of OSC procedure are
+            maintained;
+          \item Ensuring all training and documents are completed and filled by all
+            members of the Executive Board by time frames places by the Office of Student
+            Life of the Ohio State University;
+          \item Providing a model for what an effective, inclusive, and mindful member of
+            OSC ought to behave like;
+          \item Being mindful of the assets and events presently and in the future under
+            OSC's purview.
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\subsection{Voting and Tenure}
+
+\subsubsection{Time Allotted to Self-Nomination and Voting}
+\subsubsection{Precise Voting and Vote-Counting Procedure}
+\subsubsection{Tenure}
 
 % Signature section
 \clearpage
 \section*{RATIFICATION}
 \addcontentsline{toc}{section}{RATIFICATION}
 
-We, the undersigned, hereby ratify this Constitution on behalf of [ORGANIZATION NAME].
+We, the undersigned, hereby ratify this Constitution on behalf of the Open Source Club at
+the Ohio State University.
 
 \vspace{1cm}
 \begin{tabular}{p{3in}p{3in}}
