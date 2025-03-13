@@ -31,20 +31,20 @@
 
 ---
 
-# Executive Officer Procedures
+# Executive Officer Briefs
 
 [x]()
 
-[General Procedure Recommendations for the Executive Board]()
+[General Procedure Recommendations for the Executive Board](/briefs/README.md)
 
-[President]()
+[President](/briefs/president.md)
 
-[Vice President]()
+[Vice President](/briefs/vice-president.md)
 
-[Treasurer]()
+[Treasurer](/briefs/treasurer.md)
 
-[Development Czar]()
+[Development Czar](/briefs/development.md)
 
-[Website Czar]()
+[Website Czar](/briefs/website.md)
 
-[Social Media Czar]()
+[Social Media Czar](/briefs/social-media.md)
