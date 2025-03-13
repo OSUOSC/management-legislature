@@ -13,17 +13,18 @@
 \usepackage{xfrac}
 \usepackage{setspace}
 \usepackage{hyperref}
+\usepackage{tocloft}
 \usepackage{bookmark}
 
 % Color for headings and accents
-\definecolor{crimsonred}{RGB}{117,0,0}
+\definecolor{accent}{RGB}{117,0,0}
 
 % Custom heading formats
 \renewcommand{\thesection}{\Roman{section}}
 \renewcommand{\thesubsection}{\Roman{subsection}}
 \renewcommand{\thesubsubsection}{\Roman{subsubsection}}
 \titleformat{\section}
-  {\normalfont\Large\bfseries\color{crimsonred}}
+  {\normalfont\Large\bfseries\color{accent}}
   {ARTICLE \thesection.}{0.5em}{}
 \titleformat{\subsection}
   {\normalfont\large\bfseries}
@@ -41,15 +42,29 @@
 \fancyhead[R]{\slshape Constitution}
 \fancyfoot[C]{\thepage}
 
+% Right-align Roman numerals in TOC
+\usepackage{tocloft}
+\renewcommand{\cftsecpresnum}{\hfill}
+\renewcommand{\cftsecaftersnum}{\quad}
+\setlength{\cftsecnumwidth}{3.5em}  % Still need adequate width for the largest numeral
+
+% For subsections
+\renewcommand{\cftsubsecpresnum}{\hfill}
+\renewcommand{\cftsubsecaftersnum}{\quad}
+\setlength{\cftsubsecnumwidth}{3em}
+
+% For subsubsections (if you have them)
+\renewcommand{\cftsubsubsecpresnum}{\hfill}
+\renewcommand{\cftsubsubsecaftersnum}{\quad}
+\setlength{\cftsubsubsecnumwidth}{3em}
+
 % Document content starts here
 \begin{document}
 
 % Change bullet style
-\renewcommand{\labelitemi}{\textcolor{crimsonred}{\ding{68}}}
-\renewcommand{\labelitemii}{\textcolor{crimsonred}{\ding{67}}}
-\renewcommand{\labelitemiii}{\textcolor{crimsonred}{\ding{66}}}
-% \renewcommand{\labelitemii}{\textcolor{crimsonred}{$\blacktriangleright$}}
-% \renewcommand{\labelitemiii}{\textcolor{crimsonred}{$\bullet$}}
+\renewcommand{\labelitemi}{\textcolor{accent}{\ding{68}}}
+\renewcommand{\labelitemii}{\textcolor{accent}{\ding{67}}}
+\renewcommand{\labelitemiii}{\textcolor{accent}{\ding{66}}}
 
 % Title page
 \begin{titlepage}
@@ -60,8 +75,8 @@
 \includegraphics[width=0.4\textwidth]{logo.png}\\[2cm]
 
 % Title
-{\LARGE\bfseries\color{crimsonred} CONSTITUTION\\[0.5cm]}
-{\huge\bfseries\color{crimsonred} \underline{Open Source Club}\\[1cm]}
+{\LARGE\bfseries\color{accent} CONSTITUTION\\[0.5cm]}
+{\huge\bfseries\color{accent} \underline{Open Source Club}\\[1cm]}
 
 % Subtitle
 {\large Last Revised: [Month Day, Year]}\\[3cm]
@@ -138,13 +153,13 @@ for brevity.
 
 \subsection{Purpose}
 
-This student organization will dedicate itself to helping promote, propogate, and standardize
-the open source paradigm of technology deevelopment and use, both in software, and in other
+This student organization will dedicate itself to helping promote, propagate, and standardize
+the open source paradigm of technology development and use, both in software, and in other
 works to which the open source paradigm is applicable and societally beneficial.
 
 The organization will strive to excel in these three vectors by:
 
-\begin{enumerate}[label=\textcolor{crimsonred}{\alph*.}, leftmargin=2em]
+\begin{enumerate}[label=\textcolor{accent}{\alph*.}, leftmargin=2em]
   \item Introducing the open source model of development to OSU students and the larger
     OSU/Columbus community;
   \item Showcasing projects developed under an open source development model (programs,
@@ -161,7 +176,7 @@ The organization will strive to excel in these three vectors by:
     relationship with technology and a more democratic paradigm of technology in our societies.
 \end{enumerate}
 
-\subsection{Non-Descrimination Policy}
+\subsection{Non-Discrimination Policy}
 
 This organization does not discriminate on the basis of age, ancestry, color, disability,
 gender identity or expression, genetic information, HIV/AIDS status, military status,
@@ -183,7 +198,7 @@ learn how to benefit from - open source. No fees or dues will ever be collected 
 member of the community wishing to involve themselves in the Open Source Club.
 
 Recognizing the breadth of our potential member pool, we define the two types of
-members as \textbf{active} and \textbf{passive}, and elaborate on the priviledges afforded
+members as \textbf{active} and \textbf{passive}, and elaborate on the privileges afforded
 to each.
 
 \subsection{Active Membership}
@@ -206,7 +221,7 @@ not limited to:
   \item Other examples left to the officers' discretion.
 \end{itemize}
 
-Active membership affords members the privelege of continuing to participate in digital
+Active membership affords members the privilege of continuing to participate in digital
 social groups; being allowed to attend meetings and, to the discretion of associated
 organizations, meeting collaborations.
 
@@ -229,7 +244,7 @@ degree. This includes, but is not limited to:
   \item Other examples left to the officers' discretion.
 \end{itemize}
 
-Passive membership affords members the privelege of continuing to participate in digital
+Passive membership affords members the privilege of continuing to participate in digital
 social groups; being allowed to attend meetings and, to the discretion of associated
 organizations, meeting collaborations.
 
@@ -295,53 +310,299 @@ leadership and advisors as valid. They exist so as to allow flexibility in how m
 the Executive Board of OSC represent their Officership to others, be that in professional
 documents, in communicating with non-OSC parties, or otherwise.
 
+\subsubsection{*President}
+The President is the primary leader of the executive board, and oversees the large-scale
+success of the organization.
 \begin{itemize}
-  \item \textbf{*President:} The President is the primary leader of the executive board,
-    and oversees the large-scale success of the organization.
+  \item The following is a non-exhaustive list of the expected responsibilities of
+    the President of Open Source Club:
     \begin{itemize}
-      \item The following is a non-exhaustive list of the expected responsibilities of
-        the President of Open Source Club:
-        \begin{itemize}
-          \item Deciding meeting times and topic;
-          \item Maintaining appropriate and welcoming behavior in OSC spaces (in-person,
-            digital, and otherwise);
-          \item Establishing and/or disestablishing social media accounts and virtual
-            social groups;
-          \item Representing OSC in matters with non-OSC parties;
-          \item Ensuring detailed records and recommendations of OSC procedure are
-            maintained;
-          \item Ensuring all training and documents are completed and filled by all
-            members of the Executive Board by time frames places by the Office of Student
-            Life of the Ohio State University;
-          \item Providing a model for what an effective, inclusive, and mindful member of
-            OSC ought to behave like;
-          \item Being mindful of the assets and events presently and in the future under
-            OSC's purview.
-        \end{itemize}
+      \item Deciding meeting times and topic;
+      \item Maintaining appropriate and welcoming behavior in OSC spaces (in-person,
+        digital, and otherwise);
+      \item Establishing and/or disestablishing social media accounts and virtual
+        social groups;
+      \item Representing OSC in matters with non-OSC parties;
+      \item Ensuring detailed records and recommendations of OSC procedure are
+        maintained;
+      \item Ensuring all training and documents are completed and filled by all
+        members of the Executive Board by time frames places by the Office of Student
+        Life of the Ohio State University;
+      \item Providing a model for what an effective, inclusive, and mindful member of
+        OSC ought to behave like;
+      \item Being mindful of the assets and events presently and in the future under
+        OSC's purview.
+    \end{itemize}
+  \item Acceptable alternative titles:
+    \begin{itemize}
+      \item Benevolent Dictator
+      \item Organization Lead
+      \item Primary Czar
     \end{itemize}
 \end{itemize}
 
+\subsubsection{Vice President}
+The Vice President is the secondary leader of the Executive
+Board, and ought to support the President in their responsibilities as both parties see
+fit and appropriate.
+\begin{itemize}
+  \item The following is a non-exhaustive list of the expected responsibilities of the
+    Vice President of Open Source Club:
+    \begin{itemize}
+      \item Assisting the President in their responsibilities where the President feels
+        they require assistance;
+      \item Maintaining communications with non-OSC parties as deemed appropriate;
+      \item Raising awareness and interest in OSC as deemed appropriate.
+    \end{itemize}
+  \item Acceptable alternative titles:
+    \begin{itemize}
+      \item Supporting Organization Lead
+      \item Secondary Czar
+      \item Vice President of Operations
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{*Treasurer}
+The Treasurer is the Executive Officer tasked with overseeing
+and managing existing financial assets belonging to OSC, as well as in ensuring
+that OSC is maintaining sustainable pecuniary practices. They are expected to maintain
+detailed records of all assets and funds belonging to OSC, as well as a detailed history
+of pecuniary transactions.
+\begin{itemize}
+  \item The following is a non-exhaustive list of the expected responsibilities of the
+    Treasurer of Open Source Club:
+    \begin{itemize}
+      \item Maintaining detailed records of transactions involving OSC in all matters
+        that would affect the financial state of the organization;
+      \item Maintaining up-to-date records on the digital, physical, and financial assets
+        belonging to OSC;
+      \item Preparing end-of-semester financial statements for OSC;
+      \item Ensuring all members of OSC who, in immediate lack of access to OSC funds
+        used ``out-of-pocket'' funds for direct OSC matters, are appropriately reimbursed,
+        and that such reimbursements are effectively recorded in financial documentation.
+    \end{itemize}
+  \item Acceptable alternative titles
+    \begin{itemize}
+      \item Financial Lead
+      \item Financial Czar
+      \item Vice President of Finance
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Director of Software Project Development}
+The Director of Software Project
+Development is the Executive Officer tasked with fostering an inter-supportive community
+of software and/or hardware developers where members can improve their skills in
+making technical contributions to open source and developing their own open source
+projects, as well as find a community of like-minded developers to help one another
+become more involved in the technical side of the open source community at large. 
+\begin{itemize}
+  \item The following is a non-exhaustive list of the expected responsibilities of the
+    Director of Software Project Development of Open Source Club:
+    \begin{itemize}
+      \item Independently leading meetings and, optionally, a dedicated development
+        subteam of OSC focused on software development within the larger open source
+        community;
+      \item Act as a central hub for information regarding involving oneself with
+        open source development for members.
+    \end{itemize}
+  \item Acceptable alternative titles:
+    \begin{itemize}
+      \item Technical Development Czar
+      \item Software Development Czar
+      \item Development Czar
+      \item Vice President of (Software) Development
+      \item Secretary of (Software) Development
+    \end{itemize}
+\end{itemize}
+
+It is important to recognize that any given incarnation of OSC leadership may feel that
+some of these responsibilities are better handled by members of the Executive board
+different from the one to whom they are described to belong in this Section. As a rule of
+thumb, shifting of responsibilities is acceptable so long as the stated general-purpose
+role of the officer(s) in question is neither infringed upon nor ignored, and so long as
+all officers in their roles feel they have a set of responsibilities representative of
+the workload suggested by the responsibilities provided herein.
+
 \subsection{Voting and Tenure}
 
+Elections are to be held annually as per the procedures provided herein.
+
+All voting procedures occur within a time frame defined by the first weekend after the
+last day of proper classes (i.e. not finals). For brevity, we refer to this weekend as
+the Post-class Weekend. All events and time periods that are defined to start some
+"weeks" before this Weekend are implied to have thresholds at Sunday, 11:59 PM.
+
 \subsubsection{Time Allotted to Self-Nomination and Voting}
+
+7 weeks exactly before the Post-class Weekend, a three-week period of self-nomination will
+open. No less than one week before this period, current Executive leadership will have
+notified active members at large of the upcoming self-nomination period. Current Executive
+leadership is to prepare a manner in which members can self-nominate for all Executive
+roles and potential new ones, should they feel that there is a set of responsibilities
+warranting their own dedicated role, and that they are qualified to fulfill them. The
+creation of this new role is left to current Officer discretion as established in Section
+III of this article. Whatever manner of self-nomination is selected must also include a
+way for self-nominees to justify their candidacy for the role (be it past experience,
+relevant skills, etc.) so that voters are better prepared to gauge the available candidates.
+An active member is permitted to self-nominate for more than one Executive position, but
+is only permitted to hold one Executive position during their tenure. Candidates are to
+disclose Executive position preference as a part of their self-nomination. Self-nomination
+is to close 4 weeks before the Post-class Weekend.
+
+As soon as active members are notified of the candidates, candidates are free to campaign
+for their positions, so long as their campaigning is congruent with the expected behaviors
+of an OSC member in good standing. 3 weeks before the Post-class Weekend, a three-week
+period of voting will open that ends on the threshold of the Post-class Weekend.
+
+No later than 2 weeks after the Post-class Weekend, current Executive leadership is to
+announce the results of the election.
+
 \subsubsection{Precise Voting and Vote-Counting Procedure}
+
+When the voting time period has opened, voting is to be completed using rank-choice for
+each Executive role. All candidates for a given role are to be listed, and voters are to
+list them in order of preference.
+
+In counting these votes, the first candidate to reach 50\% first-rank approval is awarded
+the position. If no candidate receives 50\% first-rank approval, the candidate with the
+least first-rank approvals is eliminated from the count, and the votes allotted to them
+are divided among the next-highest-ranked candidate for each voter. First-rank approval
+is recalculated in this manner until a candidate receives 50\% of the votes.
+
+If a single candidate is awarded multiple Executive positions, their highest-preferred role
+is awarded to them. For the role(s) they were not awarded, the votes are recounted with
+all candidates back in the pool, but with the candidate in question removed. The winner
+of the role is decided by the preceding process once again.
+
+This process is to repeat itself until all candidate-available roles are filled by unique
+candidates.
+
 \subsubsection{Tenure}
 
+The winning candidates are appointed to their roles on the first day of the August
+immediately succeeding the election period. Current Executive leadership is expected to
+facilitate the adoption of Executive responsibilities justly and amicably during the
+period in which the new Executive leaders have been announced but not yet appointed.
+These candidates hold their roles until the candidates awarded Executive positions in the
+next annual election cycle are appointed. That is, Executive officership is granted for
+one year, from August 1st to August 1st.
+
+Members of OSC are permitted to run for Executive Officership so long as they meet the
+requirements of an active member as provided in Article II, Section I.
+
+\subsection{Modifying Officer Positions}
+
+As expressed in Section I of this Article, this organization must always have unique
+individuals fulfilling the following roles:
+
+\begin{itemize}
+  \item President
+  \item Treasurer
+\end{itemize}
+
+In the case of substantial changes to organization membership, current Officers may deem
+it reasonable to create new Officer positions, or eliminate existing ones. When this
+occurs is left entirely to Officer discretion, with the details surrounding procedure of
+accepting changes to Executive Officership being left to current Executive Officers upon
+which to decide.
+
+In the event of an added role, the role in question is to be logged in the Office of
+Student Life portal as a "Secretary." The precise name is left to current Executive
+Officership to decide upon, and is to be entered in the field designated "Other Title."
+The only exception to this rule is for the additional role of Vice President, which
+should be labeled in the system as such. Historically, the naming convention has been as
+follows, where one is selected as the "primary" title, and others are usable by members
+who hold the role, as expressed in Article IV, Section I:
+
+\begin{itemize}
+  \item Director of [RESPONSIBILITY]
+  \item Vice President of [RESPONSIBILITY]
+  \item {[RESPONSIBILITY]} Lead
+  \item {[RESPONSIBILITY]} Czar
+  \item Secretary of [RESPONSIBILITY]
+\end{itemize}
+
+These are suggestions, and they can be eschewed in favor of a title agreed upon by current Executive Officership, including the active member who would be adopting the role. Any changes made to Executive Officership must be made public to membership prior to the role changes taking effect.
+
+\section{Advisor Selection}
+
+Advisors of student organizations must be full-time members of the University faculty or
+Administrative \& Professional staff. Advisors are expected to approve any changes made to
+the Constitution, Goals, or other legislature of the organization. They are additionally
+expected to approve programming and meeting decisions, as well as budgeting decisions.
+Advisors are expected to meet with the officers of the organization at least once per term.
+
+Finally, advisors are encouraged to meet with the officers on a more regular basis, such
+as once per month, as well as give general opinions and advice pertaining to the success
+of the organization.
+
+\section{Organization Meetings}
+
+While meeting attendance is not explicitly required to be a member of this organization
+(excepting active membership), it is highly encouraged. In-person meetings shall occur
+no less than two times in a semester, pending extenuating public health considerations,
+individual, communal, municipal, or otherwise.
+
+It is a stated goal of the OSC to perform collaborative meetings with other
+organizations. Whether and which of these meetings are considered official OSC meetings
+is left to the discretion of the current officers.
+
+\section{Management of Organization Assets}
+
+Whether they be in active us or not, all assets currently belonging to the Open Source
+Club must be kept recorded as such by the Treasurer, as stated in their responsibilities
+in Article IV, Section I. It is left to current Executive Officership how and whether
+these assets are utilized, but it is paramount that their existence be made clear for
+future Executive Officers.
+
+\subsection{Physical Assets}
+
+All physical assets are to be stored and cared for in a location agreed upon by the current
+officers.
+
+\subsection{Digital Assets}
+
+In addition to other assets that are typically held by OSU organizations, the Open Source
+Club will also manage a GitHub organization.
+
+At any given time, the only individuals who are permitted write access to the GitHub
+organization and all repositories over which it presides are the three primary officers
+labeled in Article IV Section III, the faculty advisor(s) of the organization, and any
+other additional officers whose explicitly-named duties in this constitution include the
+management of this organization's digital assets. It is the responsibility of those
+aforementioned to ensure that, when the individuals taking on these roles are changed,
+permissions are revoked and granted properly within one month of the decision for these
+roles to be changed.
+
+Non-write access is left to the current officers' discretion.
+
+\section{Methods of Amending This Constitution}
+
+Proposed amendments shall be presented to the other officers and then discussed among
+them. If a majority of officers approve of the amendment, it can be made to the constitution.
+
+\section{Methods of Dissolving this Organization}
+
+For this organization to dissolve, a unanimous vote among the officers to do so shall
+take place. Should any assets and/or debt exist, the advisers shall see fit to dispose of
+it.
+
 % Signature section
-\clearpage
-\section*{RATIFICATION}
-\addcontentsline{toc}{section}{RATIFICATION}
-
-We, the undersigned, hereby ratify this Constitution on behalf of the Open Source Club at
-the Ohio State University.
-
-\vspace{1cm}
-\begin{tabular}{p{3in}p{3in}}
-\rule{3in}{0.5pt} & \rule{3in}{0.5pt} \\
-President & Faculty Advisor \\
-& \\
-\rule{3in}{0.5pt} & \rule{3in}{0.5pt} \\
-Vice President & Date of Ratification \\
-\end{tabular}
-
+% \clearpage
+% \section*{RATIFICATION}
+% \addcontentsline{toc}{section}{RATIFICATION}
+%
+% We, the undersigned, hereby ratify this Constitution on behalf of the Open Source Club at
+% the Ohio State University.
+%
+% \vspace{1cm}
+% \begin{tabular}{p{3in}p{3in}}
+% \rule{3in}{0.5pt} & \rule{3in}{0.5pt} \\
+% President & Faculty Advisor \\
+% & \\
+% \rule{3in}{0.5pt} & \rule{3in}{0.5pt} \\
+% Vice President & Date of Ratification \\
+% \end{tabular}
+%
 \end{document}
