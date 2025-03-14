@@ -3,6 +3,7 @@
 % Packages
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
+\usepackage{transparent}
 \usepackage{titlesec}
 \usepackage{titling}
 \usepackage{enumitem}
@@ -12,7 +13,7 @@
 \usepackage{hanging}
 \usepackage{xfrac}
 \usepackage{setspace}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{tocloft}
 \usepackage{bookmark}
 
@@ -39,7 +40,11 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
-\fancyhead[R]{\slshape Constitution}
+\fancyhead[L]{\slshape Constitution}
+\fancyhead[R]{
+  \transparent{1}{\slshape Open Source Club}
+  \transparent{0.7}{\includegraphics[height=10pt,width=10pt]{logo.png}}
+}
 \fancyfoot[C]{\thepage}
 
 % Right-align Roman numerals in TOC
