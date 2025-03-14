@@ -8,3 +8,4 @@ title = "Open Source Club at the Ohio State University"
 [output.html]
 default-theme = "light"
 preferred-dark-theme = "coal"
+git-repository-url = "https://github.com/OSUOSC/management-legislature"
